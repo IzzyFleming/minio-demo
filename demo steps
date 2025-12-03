@@ -1,0 +1,21 @@
+
+Make the new container
+> docker-compose up -d
+
+Start it up
+> podman start minio
+
+Confirm it's running
+> podman ps
+
+Look in web browser
+
+Now can run the various commands
+> python create_bucket.py
+
+> python list_bucket_contents.py
+
+> upload_files.py
+Adds version 1, then 2, etc
+
+Inspect in web console

@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+    # S3
+    minio:
+        command: "server --console-address ':9001' /data"
+        image: "minio/minio"
+        ports:
+            - "9000:9000"
+            - "9001:9001"
+        restart: always
+        environment:
+            MINIO_ROOT_USER: "abc"
+            MINIO_ROOT_PASSWORD: "abcdefghi"
